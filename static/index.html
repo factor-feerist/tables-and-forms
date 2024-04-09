@@ -9,10 +9,54 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
-    <form action="/pets/orders" method="post">
+    <form action="/pets/orders" method="POST">
+        <label for="name">Имя питомца:</label>
+        <input type="text" id="name" name="name" value="Барбоскин">
+
+        <select name="petType">
+            <option value="dog" selected>Собака</option>
+            <option value="car">Кошка</option>
+            <option value="tiger">Тигр</option>
+        </select><br>
+
+        <label>
+            <label>
+                <input type="radio" id="gender" name="gender" value="boy" checked>Мужчина<br>
+            </label>
+    
+            <label>
+                <input type="radio" id="gender" name="gender" value="girl">Женщина<br>
+            </label>
+    
+            <label>
+                <input type="radio" id="gender" name="gender" value="none">Нет<br>
+            </label>
+        </label><br>
+   
+  
+        <label for="eyeColor">
+            Цвет глаз:<br>
+            <input type="color" id="eyeColor" name="eyeColor" value="#ff0000">
+        </label><br>
+
+        <label for="tailLength">Длина хвоста:</label>
+        <input type="number" id="tailLength" name="tailLength" value="42">
+
+        <label for="dateOfBirth">Дата рождения:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" value="2024-01-01">
+
+        <label for="email">Электронна почта:</label>
+        <input type="email" id="email" name="email" value="asd@asd">
+
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" pattern="\+7[0-9]{10}" value="+79127458292">
+
+        <label for="rules">Согласен с правилами</label>
+        <input type="checkbox" id="rules" name="rules" value="true">
+
         <input type="submit" value="Отправить">
     </form>
+      
 
 </main>
 </body>
