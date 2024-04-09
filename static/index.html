@@ -10,14 +10,20 @@
     <h1>Найди себе друга!</h1>
 
     <form action="/pets/orders" method="POST">
-        <label for="name">Имя питомца:</label>
-        <input type="text" id="name" name="name" value="Барбоскин">
+        <label for="name">
+            Имя питомца:<br>
+            <input type="text" id="name" name="name" value="Барбоскин" placeholder="Имя вашего питомца">
+        </label><br>
+
+        <br>
 
         <select name="petType">
             <option value="dog" selected>Собака</option>
             <option value="car">Кошка</option>
             <option value="tiger">Тигр</option>
         </select><br>
+
+        <br>
 
         <label>
             <label>
@@ -31,30 +37,57 @@
             <label>
                 <input type="radio" id="gender" name="gender" value="none">Нет<br>
             </label>
-        </label><br>
+        </label>
    
-  
+        <br>
+
         <label for="eyeColor">
             Цвет глаз:<br>
             <input type="color" id="eyeColor" name="eyeColor" value="#ff0000">
         </label><br>
 
-        <label for="tailLength">Длина хвоста:</label>
-        <input type="number" id="tailLength" name="tailLength" value="42">
+        <br>
 
-        <label for="dateOfBirth">Дата рождения:</label>
-        <input type="date" id="dateOfBirth" name="dateOfBirth" value="2024-01-01">
+        <label for="tailLength">
+            Длина хвоста:<br>
+            <input type="number" id="tailLength" name="tailLength" value="42" placeholder="от 7 до 120">
+        </label><br>
 
-        <label for="email">Электронна почта:</label>
-        <input type="email" id="email" name="email" value="asd@asd">
+        <br>
 
-        <label for="phone">Номер телефона</label>
-        <input type="tel" id="phone" name="phone" pattern="\+7[0-9]{10}" value="+79127458292">
+        <label for="dateOfBirth">
+            Дата рождения:<br>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" value="2024-01-01">
+        </label><br>
 
-        <label for="rules">Согласен с правилами</label>
-        <input type="checkbox" id="rules" name="rules" value="true">
+        <br>
 
-        <input type="submit" value="Отправить">
+        <label for="email">
+            Электронна почта:<br>
+            <input type="email" id="email" name="email" value="asd@asd" placeholder="example@gmail.com">
+        </label><br>
+
+        <br>
+
+        <label for="phone">
+            Номер телефона<br>
+            <input type="tel" id="phone" name="phone" pattern="\+7[0-9]{10}" value="+79127458292" placeholder="+7-xxx-xxx-xx-xx">
+        </label><br>
+
+        <br>
+
+        <label for="rules">
+            Согласен с правилами<br>
+            <input type="checkbox" id="rules" name="rules" value="true">
+        </label><br>
+
+        <br>
+
+        <input type="submit" value="Отправить"><br>
+
+        <br>
+
+        <input type="reset" value="Сбросить">
     </form>
       
 
